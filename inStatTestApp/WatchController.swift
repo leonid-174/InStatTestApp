@@ -24,7 +24,6 @@ class WatchController: UIViewController {
         
         let url = URL(string: videoURL)
         let player = AVPlayer(url: url!)
-        //let playerController = AVPlayerViewController()
         
         playerController.player = player
         self.addChild(playerController)
