@@ -32,12 +32,9 @@ extension ViewController: InStatPresenterProtocol {
     func loadData() {
         
         let inStatURL = "https://api.instat.tv/test/data"
-        //let apiKey = "sd4grh0omdj9a31exnpikhrmsu3v46"
         
         let headers: HTTPHeaders = [
                 "Content-Type": "aapplication/json"]
-                //application/vnd.twitchtv.v5+json
-                //"Client-ID": apiKey]
             let inStatBody: [String:Any] = [
                   "proc": "get_match_info",
                   "params": [
@@ -74,8 +71,7 @@ extension ViewController: InStatPresenterProtocol {
         let headers: HTTPHeaders = [
                 "Content-Type": "aapplication/json"
             ]
-                //application/vnd.twitchtv.v5+json
-                //"Client-ID": apiKey]
+                
         let inStatLink: [String:Any] = [
                 "match_id":1724836,
                 "sport_id":1
